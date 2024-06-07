@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Screenshot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <span class="logo">Love..</span>
+            <div class="container center_all">
+                <form>
+                    <input type="text" name="pName" id="pName" placeholder="Special one" maxlength="20">
+                    <input type="text" name="uName" id="uName" placeholder="Name" maxlength="20">
+                    <textarea name="msg" id="msg" rows="2" placeholder="Special msg here" maxlength="250"></textarea>
+                </form>
+                <button id="captureBtn">Share Screenshot</button>
+                </div>
+            <div class="capture-area">
+                <div class="foreground-text" id="captureArea">
+                    <span id="pNameDisplayContainer">Dear, <b id="pNameDisplay">special one</b></span>
+                    <br>
+                    <span id="msgDisplay"><p id="message">Special message here</p></span>
+                    <br>
+                    <span id="uNameDisplayContainer">Your <b id="uNameDisplay">name</b></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="screenshotText">
+        <span id="screenshotText" class="container">Recent Screenshots</span>
+    </div>
+    <div id="screenshotsContainer" class="container">
+        <div id="screenshotsContainerchild"></div>
+    </div>
+
+
+    <code class="container center_all">created by <a href="https://www.instagram.com/zxdhiru">&lt;&#47;zxdhiru&gt;</a></code>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.min.js"></script>
+    <script src="./formhandler.min.js"></script>
+</body>
+</html>
